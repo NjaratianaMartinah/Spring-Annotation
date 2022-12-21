@@ -10,8 +10,13 @@ public class AnnotationDemoApp {
 
         // get the ban from the spring container
         Coach theCoach = context.getBean("tennisCoach", Coach.class);
+        
         // call a method on the bean
         System.out.println(theCoach.getDailyWorkout());
+        
+        // call method too get the daily fortune
+        System.out.println(theCoach.getDailyFortune());
+        
         // close the context
         context.close();
     }
