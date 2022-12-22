@@ -9,7 +9,7 @@ public class AnnotationDemoApp {
         ClassPathXmlApplicationContext context  = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // get the ban from the spring container
-        Coach theCoach = context.getBean("swimCoach", Coach.class);
+        Coach theCoach = context.getBean("footballCoach", Coach.class);
         
         // call a method on the bean
         System.out.println(theCoach.getDailyWorkout());
